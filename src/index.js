@@ -2,9 +2,18 @@
 import React from "react";
 import ReactDOM from "react-dom";
 
+// components
+import MainBody from "./main/MainBody";
+import Footer from "./common/Footer";
+
 // index component
-const Index = () => {
-  return <div>Hello there</div>;
+const App = () => {
+  return (
+    <div>
+      <MainBody />
+      <Footer />
+    </div>
+  );
 };
 
-ReactDOM.render(<Index />, document.getElementById("main-app"));
+ReactDOM.render(<App />, document.getElementById("main-app"));
