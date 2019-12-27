@@ -2,14 +2,19 @@
 import React from "react";
 import ReactDOM from "react-dom";
 
+// styles
+import "./index.scss";
+
 // components
+import MainHeader from "./main/MainHeader";
 import MainBody from "./main/MainBody";
 import Footer from "./common/Footer";
 
 // index component
 const App = () => {
   return (
-    <div>
+    <div className="main-app">
+      <MainHeader />
       <MainBody />
       <Footer />
     </div>
